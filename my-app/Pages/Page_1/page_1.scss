@@ -1,0 +1,105 @@
+.page_one-wapper{
+    width: 375px;
+    height: 638px;
+    &_header {
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 22px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 2px rgba(58, 72, 80, 0.07), 0px 6px 13px rgba(176, 189, 197, 0.14);
+        &-count{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 19px;
+            text-align: center;
+            color: #3C5060;
+        }
+    }
+    &_line {
+        height: 8px;
+        background: #D8D8D8;
+        &-fuller{
+            width: 35px;
+            height: 8px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background: linear-gradient(290.47deg, #3797FA 11.33%, #45C9FF 83.66%);
+        }
+    }
+    &_main{
+        height: 520px;
+        padding-top: 51px;
+        text-align: center;
+        background: #F7F8F9;
+        &-title {
+            margin-bottom: 23px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 29px;
+            color: #0F0F0F;
+        }
+        &-btn-women{
+            width: 274px;
+            height: 138px;
+            margin-bottom: 14px;
+            background: #FFFFFF;
+            border: 1px solid rgba(231, 235, 237, 0.80141);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+            border-radius: 14px;
+            &-text{
+                position: relative;
+                top: 5px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                color: #425A60;
+            }
+            &-img{
+                position: relative;
+                bottom: 8px;
+            }
+        }
+        &-btn-men{
+            width: 274px;
+            height: 138px;
+            background: #FFFFFF;
+            border: 1px solid rgba(231, 235, 237, 0.80141);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+            border-radius: 14px;
+            &-text{
+                position: relative;
+                top: 5px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                color: #425A60;
+            }
+            &-img{
+                position: relative;
+                bottom: 8px;
+            }
+        }
+        &-skip{
+            position: relative;
+            top: 133px;
+            left: 114px;
+            width: 147px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            text-decoration-line: underline;
+            color: #3A4850;
+        }
+        &-btn-women:hover{
+            cursor: pointer;
+        }
+        &-btn-men:hover{
+            cursor: pointer;
+        }
+        &-skip:hover{
+            cursor: pointer;
+        }
+    }
+}
