@@ -1,14 +1,3 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Document</title><style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,'Open Sans', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background:   #E5E5E5;
-}
-
 .page_two-women-wapper {
   width: 375px;
   height: 638px;
@@ -142,4 +131,4 @@ body {
 .page_two-women-wapper_main-skip:hover {
   cursor: pointer;
 }
-/*# sourceMappingURL=page_2_women.css.map */</style></head><body> <div class="page_two-women-wapper"><header class="page_two-women-wapper_header"><img class="page_two-women-wapper_header-arrow prev_page" src="./Page_2_men/left_arrow.svg"><div class="page_two-women-wapper_header-count">2/10</div><img class="page_two-women-wapper_header-stop stop_poll" src="./Page_2_men/stop.svg"></header><div class="page_two-women-wapper_line"><div class="page_two-women-wapper_line-fuller"></div></div><div class="page_two-women-wapper_main"> <div class="page_two-women-wapper_main-title">What type of glasses are you looking for?</div><button class="page_two-women-wapper_main-btn-women next_page"><img class="page_two-women-wapper_main-btn-women-img" src="./Page_2_women/women_shadow_glasses.svg"><div class="page_two-women-wapper_main-btn-women-text">Eyeglasses</div></button><button class="page_two-women-wapper_main-btn-men next_page"><img class="page_two-women-wapper_main-btn-men-img" src="./Page_2_women/women_shadow_sunglasses.svg"><div class="page_two-women-wapper_main-btn-men-text">Sunglasses</div></button><div class="page_two-women-wapper_main-skip next_page">I want to see both</div></div></div></body></html>
+/*# sourceMappingURL=page_2_women.css.map */

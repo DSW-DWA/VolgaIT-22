@@ -1,5 +1,5 @@
-import './page_1.css';
-import './page_1.css.map'
+import './Page_1.css';
+import './Page_1.css.map';
 
 function Page_1() {
   return (

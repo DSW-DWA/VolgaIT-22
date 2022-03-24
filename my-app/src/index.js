@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Page_0 from './page_0/Page_0';
-import Page_1 from './page_1/Page_1';
+import Page_0 from './page_0/Page_0.js';
+import Page_1 from './page_1/Page_1.js';
 import reportWebVitals from './reportWebVitals';
 
-let page = [Page_0,Page_1];
+let page = [Page_0,Page_1,];
 let root = document.getElementById('glasses-quiz-widget');
 let strUrl = root.dataset.source;
 console.log(typeof strUrl);

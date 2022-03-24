@@ -1,9 +1,7 @@
-import './page_0.css';
-import './page_0.css.map';
+import './Page_0.css';
+import './Page_0.css.map';
 
 function Page_0() {
-  function increment(){
-  }
   return (
     <div className="page_zero-wapper">
   <header className="page_zero-wapper_header"><img className="page_zero-wapper_header-logo" src={process.env.PUBLIC_URL + 'img/Otimax_Dev_logo_3.png'}/><img  className="page_zero-wapper_header-arrow next_page" src={process.env.PUBLIC_URL + 'img/arrow_right.svg'}/></header>
