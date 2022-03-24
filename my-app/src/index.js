@@ -1,28 +1,44 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Page_0 from './page_0/Page_0.js';
-import Page_1 from './page_1/Page_1.js'
+import Page_0 from './page_0/Page_0';
+import Page_1 from './page_1/Page_1';
 import reportWebVitals from './reportWebVitals';
 
-let i =0;
-let returnedUrl = document.getElementById('glasses-quiz-widget').dataset.source;
-console.log(returnedUrl);
-function tick (){
-  let page = [Page_0,Page_1];
-  let a = document.getElementsByClassName('next_page');
-  for (const el of a) {
-    el.addEventListener('click', ()=>{
-      i++;
-    });
-  }
+let page = [Page_0,Page_1];
+let root = document.getElementById('glasses-quiz-widget');
+let strUrl = root.dataset.source;
+console.log(typeof strUrl);
+
+function change(i,strUrl){
   ReactDOM.render(
     page[i](),
-    document.getElementById('glasses-quiz-widget')
+    root
   );
+  let next = document.getElementsByClassName('next_page');
+  let prev = document.getElementsByClassName('prev_page');
+  for (const el of next){
+    el.addEventListener('click',() =>{
+      let a = "";
+      if (el.hasAttribute('data-argument')) {
+        if (i == 1) a = "?" +el.dataset.argument +"="+el.dataset.value;
+          else a = "&"+ el.dataset.argument +"="+el.dataset.value
+      }
+      console.log(strUrl+a);
+      change(i+1,strUrl+a);
+    });
+  }
+  for (const el of prev){
+    el.addEventListener('click',() => {
+      let a = "";
+      if (el.hasAttribute('data-argument')) {
+        if (i == 1) a =strUrl.slice(0,strUrl.lastIndexOf('?')) +'/';
+          else a = strUrl.slice(0,strUrl.lastIndexOf('&'));
+      }
+      console.log(a);
+      change(i-1,a);
+    })
+  }
 }
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+change(0,strUrl);
 reportWebVitals();
-setInterval(tick, 1000);
